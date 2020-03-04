@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Window</title>
+<link href="login.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<script>
+function check()
+{
+var u=document.getElementById("user").value;
+var p=document.getElementById("pass").value;
+if(u=="manavrachna" && p=="123")
+{
+    confirm("Institution login");
+    prompt("Enter your five digit unique id number");
+    location.replace("filter.html");
+}
+else if(u=="gouravvashisth" && p=="22022001")
+{
+location.replace("gourav.html")
+}
+else if(u=="harshkumar" && p=="25102001")
+{
+location.replace("harsh.html")
+}
+else
+{
+alert("Invalid login detail");
+}
+}
+</script>
+</head>
+<body>
+<h2><center>WELCOME TO MANAV RACHNA EDUCATIONAL INSTITUTIONS.</center></h2>
+<div class="signin">
+<h2 style="color:white">LOG IN</h2>
+<input type="text" id="user" placeholder="USERNAME"><br>
+<input type="password" id="pass" placeholder="PASSWORD"><br><br>
+<button onclick="check();">SUBMIT</button><br><br>
+<div id="container">
+<a href="#" style="margin-right:0px; font-size:13px;
+font-family:Tahoma,Geneva,sans-serif;">Reset password</a>
+<a href="#" style="margin-right:0px; font-size:13px;
+font-family:Tahoma,Geneva,sans-serif;">Forgot password</a>
+</div><br><br><br><br><br><br>
+Don't have account?<a href="#">&nbsp;Sign Up</a>
+</div>
+</body>
+</html>
